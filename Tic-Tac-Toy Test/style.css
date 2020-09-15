@@ -1,0 +1,73 @@
+/* make the box centered */
+body {
+    color: #FFFFFF;
+    display: flex;
+    font-family:sans-serif ;
+    justify-content: center;
+}
+
+/* control box size and color */
+.container{
+    background-color: #00cc66;
+    margin:50px;
+    padding: 50px;
+    border-radius: 25px;
+    width: 600px;
+    height: 800px;
+}
+
+/* making the title inside the box centered */
+.title{
+    text-align: center;
+}
+
+.contorl-status{
+    display: flex;
+    margin-top: 25px;
+    font-size: 25px;
+    justify-content: space-around;
+}
+
+/* to let the user know that it is a button */
+.reset {
+    cursor: pointer;
+}
+
+/* when the user point on it, the color will change  */
+.reset:hover{
+    color: #006600
+}
+
+.border {
+   background: #FFFFFF;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   grid-gap: 10px;
+   margin-top: 50px;
+
+}
+
+/* to make the user know that he can click on each cell  */
+.cell {  
+    background: #00cc66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    
+}
+
+/* if the classname x make the content appear to user  */
+.x::before {
+    content: 'x';
+    font-size: 200px;
+}
+
+/* if the classname o make the content appear to user  */ 
+.o::before {
+    content: 'o';
+    font-size: 200px;
+}
